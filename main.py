@@ -104,7 +104,7 @@ if __name__ == "__main__":
     parser.add_argument('-V', '--version', action='store_true', help="Show version information") 
     parser.add_argument('-O', '--show_overlay', action='store_true', help="Show where you will click") 
     parser.add_argument('-C', '--show_clicked', action='store_true', help="Show where you clicked") 
-    parser.add_argument('-wn', '--windows_name', type=str, help="custom windows_name default is \"Arknights\"")
+    parser.add_argument('-wn', '--windows_name', type=str, help="Custom windows_name default is \"Arknights\"")
 
     args = parser.parse_args()
 
