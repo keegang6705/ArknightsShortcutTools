@@ -24,6 +24,7 @@ class WindowClicker:
         pyautogui.click(abs_x, abs_y)
         self.overlay_root.deiconify()
         pyautogui.moveTo(original_x, original_y)
+        print(f"clicked ({abs_x},{abs_y})")
         if show_clicked:
             self.queue.put(('click', abs_x - self.window.left, self.window.bottom - abs_y))
 
@@ -88,6 +89,7 @@ class WindowClicker:
         
         self.hotkeys[key] = partial(self.click_in_window, abs_x, abs_y, show_clicked)
         keyboard.add_hotkey(key, self.hotkeys[key])
+        print(f"hooked [{key}] to ({abs_x},{abs_y})")
 
     def run(self):
         self.create_overlay()
@@ -122,13 +124,14 @@ if __name__ == "__main__":
         show_overlay = True
     if args.show_clicked:
         show_clicked = True
+    print("-"*20)
     clicker.add_hotkey('q', 47, 65, True,  show_clicked, show_overlay)
     clicker.add_hotkey('e', 65, 45, True, show_clicked, show_overlay)
+    keyboard.add_hotkey('w', lambda:keyboard.send("esc"))
     print("-"*20)
-    print("ready")
+    print("ready (press shift + space to exit)")
     print("-"*20)
     clicker.run()
     print("-"*20)
     print("terminated successfully")
     print("-"*20)
-    
