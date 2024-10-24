@@ -111,7 +111,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.version:
-        print("Arknights Shortcut Tool Version 1.0.0")
+        print("Arknights Shortcut Tool Version 1.1.0")
 
     if args.windows_name:
         clicker = WindowClicker(args.windows_name)

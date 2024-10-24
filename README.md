@@ -2,6 +2,7 @@
 add hotkeys to arknights  
 q for retreat  
 e for activate skill  
+w for pause/unpause
 shift+space for exit program
 # Usage
 ```bash
@@ -14,3 +15,7 @@ python3 main.py
 ``` 
 # Notice
 i only tested with WSA i didn't test with other emulator because they should already have this function
+# Version
+0.0.0 where project started  
+1.0.0 working fine  
+1.1.0 hook esc to w button  
