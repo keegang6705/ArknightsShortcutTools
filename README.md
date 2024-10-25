@@ -18,4 +18,6 @@ i only tested with WSA i didn't test with other emulator because they should alr
 # Version
 0.0.0 where project started  
 1.0.0 working fine  
-1.1.0 hook esc to w button  
+1.1.0 hook esc to w button
+1.1.1 add 1 to change game speed , add log when press w
+//indev 1.2.0 make click position move when move windows

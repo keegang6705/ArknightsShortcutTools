@@ -111,7 +111,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.version:
-        print("Arknights Shortcut Tool Version 1.1.0")
+        print("Arknights Shortcut Tool Version 1.1.1")
 
     if args.windows_name:
         clicker = WindowClicker(args.windows_name)
@@ -127,7 +127,8 @@ if __name__ == "__main__":
     print("-"*20)
     clicker.add_hotkey('q', 47, 65, True,  show_clicked, show_overlay)
     clicker.add_hotkey('e', 65, 45, True, show_clicked, show_overlay)
-    keyboard.add_hotkey('w', lambda:keyboard.send("esc"))
+    clicker.add_hotkey('1', 85, 90, True, show_clicked, show_overlay)
+    keyboard.add_hotkey('w', lambda: (keyboard.send('esc'), print("[w] detected press esc")))
     print("-"*20)
     print("ready (press shift + space to exit)")
     print("-"*20)
