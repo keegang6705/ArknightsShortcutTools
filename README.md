@@ -20,4 +20,5 @@ i only tested with WSA i didn't test with other emulator because they should alr
 1.0.0 working fine  
 1.1.0 hook esc to w button
 1.1.1 add 1 to change game speed , add log when press w
+1.1.2 add 2 to toggle skill range
 //indev 1.2.0 make click position move when move windows
